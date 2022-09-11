@@ -1,0 +1,97 @@
+body {
+  background-color: aquamarine;
+  margin: 0%;
+  padding: 0%;
+}
+
+.bird {
+  background-color: black;
+  height: 80px;
+  width: 100px;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  border-radius: 100px 100px 0px 0px;
+  animation: fly 2s infinite;
+}
+@keyframes fly {
+  50% {
+    transform: translateY(50px);
+  }
+}
+
+.body {
+  background-color: orangered;
+  height: 100px;
+  width: 200px;
+  position: relative;
+  top: 80px;
+  right: 100px;
+  border-radius: 0px 0px 200px 200px;
+}
+.feather1 {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 60px solid blue;
+  position: relative;
+  right: 140px;
+  bottom: 70px;
+  transform: rotate(-45deg);
+}
+.eye {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 130px;
+  left: 50px;
+}
+.eye_ball {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+
+.beak {
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid #ffdb4b;
+  position: relative;
+  bottom: 140px;
+  left: 100px;
+}
+
+.feather2 {
+  background-color: #262626;
+  height: 85px;
+  width: 170px;
+  border-radius: 0px 0px 170px 170px;
+  position: relative;
+  bottom: 140px;
+  right: 120px;
+  animation: clap 1s infinite;
+  transform-origin: right;
+}
+@keyframes clap {
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+.inner {
+  background-color: lightslategrey;
+  height: 70px;
+  width: 140px;
+  border-radius: 0px 0px 120px 120px;
+  position: relative;
+  left: 15px;
+}
